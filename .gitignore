@@ -1,4 +1,6 @@
 **/tmp
 **/load_inline_cuda
 
-**/main.obj
+**/*.obj
+**/*.exe
+**/*.o
