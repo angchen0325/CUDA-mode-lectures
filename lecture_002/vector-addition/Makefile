@@ -6,8 +6,8 @@ OBJ	        = vector_addition.o
 
 default: $(EXE)
 
-vector_addition.o: vector_addition.cu
-	$(NVCC) -c -o $@ vector_addition.cu $(NVCC_FLAGS)
+$(EXE).o: $(EXE).cu
+	$(NVCC) -c -o $@ $(EXE).cu $(NVCC_FLAGS)
 
 $(EXE): $(OBJ)
 	$(NVCC) $(OBJ) -o $(EXE) $(LD_FLAGS)
